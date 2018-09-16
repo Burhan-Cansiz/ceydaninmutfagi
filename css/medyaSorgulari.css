@@ -1,5 +1,6 @@
 @media (max-width: 768px) {
-   
+    .login a,.uyeOl a{width: 100%}
+    .uyeOl{margin-bottom: 5px}
 }
 @media (min-width: 576px) {
 
