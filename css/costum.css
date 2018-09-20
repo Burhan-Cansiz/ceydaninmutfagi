@@ -47,7 +47,9 @@
 }
 
 /*Klaslar*/
+.bgTema{background: var(--temaBg)}
 .navbar{background: var(--temaBg)}
+.bgKursun{background: #e9ecef}
 /*Klaslar*/
 
 /*Bootstrap reset*/
@@ -59,14 +61,21 @@
     padding-left: 9px!important;
     padding-right: 9px!important;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{background: var(--temaBg);}
 /*Bootstrap reset.*/
 
 body{overflow-y: scroll;letter-spacing: -1px}
 .bolumBaslik .p-2{background: var(--temaBg);color: var(--temaColor);font-size: medium }
 .bolumBaslik hr{background: var(--temaBg);height: 1px}
+.post h1{
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: medium;
+    color: white
+}
 .slayder,header{background: url('../img/global/slayderBg.png')}
-.sonEklenenler h1,.benzerGonderiler h1{font-size: medium}
-.sonEklenenler a>div::before,.benzerGonderiler a>div::before{
+.post .card::before{
     content: '';
     width: 100%;
     height: 100%;
