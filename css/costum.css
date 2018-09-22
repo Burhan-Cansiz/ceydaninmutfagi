@@ -48,6 +48,8 @@
 
 /*Klaslar*/
 .bgTema{background: var(--temaBg)}
+.borderT4{border-top: 4px solid}
+.borderTema{border-color: var(--temaBg)!important}
 .navbar{background: var(--temaBg)}
 .bgKursun{background: #e9ecef}
 /*Klaslar*/
