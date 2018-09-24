@@ -26,8 +26,8 @@
                     <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item uyeOl"><a class="btn btn-sm btn-light rounded-0" href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; Üyeol</a></li>
-                    <li class="nav-item login"><a class="btn btn-sm btn-light rounded-0" href="index.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; Oturum aç</a></li>
+                    <li class="nav-item uyeOl"><a data-toggle="modal" data-target="#uyeOl" class="btn btn-sm btn-light rounded-0" href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; Üyeol</a></li>
+                    <li class="nav-item login"><a data-toggle="modal" data-target="#login" class="btn btn-sm btn-light rounded-0" href="index.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; Oturum aç</a></li>
                 </ul>
             </div>
         </nav>        
@@ -141,7 +141,7 @@
 
 
 <!--Kategoriler-->
-<div class="modal fade menu" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<section class="modal fade menu" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
     <div class="modal-content pt-2 pb-2">
 
@@ -266,8 +266,78 @@
     </div>
     </div>
     </div>
-</div>
+</section>
 <!--Kategoriler.-->
+
+<!--Login form-->
+<section class="modal fade pt-5 letterSpacing--1" id="login" role="dialog">
+    <div class="modal-dialog loginForm" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h6 class="modal-title"><span class="glyphicon glyphicon-user"></span> &nbsp;Oturum aç</h6>
+            <div class="col mt-2 p-2 rounded formMesaj gizli"></div>
+        </div>
+        <div class="modal-body">
+            <form class="mb-0">
+                <div class="row">
+                    <div class="col-3"><img class="maxHight-93 img-fluid" src="img/global/noAvatar.png"></div>
+                    <div class="col-9 pl-0">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Kullanıcı adı" name="ad">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Şifre" name="sifre">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-warning" onclick="$.oturumAc()">Oturum aç</button>
+        </div>
+    </div>
+    </div>
+</section>
+<!--Login form.-->
+
+<!--Uye ol form-->
+<section class="modal fade pt-5 letterSpacing--1" id="uyeOl" role="dialog">
+    <div class="modal-dialog uyeOlForm" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h6 class="modal-title"><span class="glyphicon glyphicon-th-list"></span> &nbsp; Üye ol</h6>
+            <div class="col mt-2 p-2 rounded formMesaj gizli"></div>
+        </div>
+        <div class="modal-body">
+            <form class="mb-0">
+            <div class="row">
+                <div class="col-3"><img class="maxHight-93 img-fluid" src="img/global/noAvatar.png"></div>
+                <div class="col-9 pl-0">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ad" name="ad">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Soyad" name="soyad">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Kullanıcı adı" name="kullaniciAdi">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Şifre" name="sifre">
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-warning" onclick="$.uyeOl()"> Üye ol</button>
+    </div>
+    </div>
+  </div>
+</section>
+<!--Uye ol form-->
+
+
 
 
 <!--Bootstrap-->
