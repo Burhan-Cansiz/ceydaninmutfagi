@@ -3,14 +3,12 @@
     .uyeOl{margin-bottom: 5px}
 }
 @media (min-width: 576px) {
-    .menu .modal-lg{max-width:540px!important}
-  
+
 }
 
 @media (min-width: 768px) {
     .uyeOl{margin : 0 5px;}
-    .menu .modal-lg{max-width:720px!important}
-    
+    .sonEklenenler img{height: 133px}
 }
 
 @media (min-width: 992px) {
@@ -19,11 +17,8 @@
         flex: 0 0 20%;
         max-width: 20%;        
     }
-    .menu .modal-lg{max-width:960px!important}
-    
 }
 
 @media (min-width: 1200px) {
-    .menu .modal-lg{max-width:1140px!important}
 
 }
